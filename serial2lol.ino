@@ -1,9 +1,12 @@
 /*
 Display a serially received string on the LoL shield.
-As soon as it is possible to display new text, the arduino will serially print READY every second until it receives a new String to process.
+As soon as it is possible to display new text, the arduino will serially 
+print READY every second until it receives a new String to process.
 
 In the application sending to the arduino set the baudrate to 115200.
-Also let the arduino some time to setup properly - sometimes the first bytes arrive somehow crippled, in this case a 1 sec delay before sending the first string helps.
+Also let the arduino some time to setup properly - sometimes the first 
+bytes arrive somehow crippled, in this case a 1 sec delay before sending
+the first string helps.
 */
 
 #include "Charliplexing.h"
